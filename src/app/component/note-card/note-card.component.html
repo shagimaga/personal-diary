@@ -1,0 +1,8 @@
+<p-card class="card" [header]="Note.date"  >
+  <section class="card-content">
+    <div [innerHTML]="Note.text"></div>
+    <button pButton label="Delete" (click)="deleteNote(Note.$key)"></button>
+    <button pButton label="Edit" (click)="updateNoteMenu(Note)"></button>
+  </section>
+</p-card>
+

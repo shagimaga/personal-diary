@@ -1,0 +1,32 @@
+header {
+  background: #3c4350;
+  
+  
+  
+  color: white;
+  font-size: 10px;
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: rgb(217, 219, 219);
+  
+  .header-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+
+    .header-logout {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content:center;
+      align-items: center;
+
+      .username {
+        margin-right: 2em;
+      }
+    }
+  }
+
+  
+
+}

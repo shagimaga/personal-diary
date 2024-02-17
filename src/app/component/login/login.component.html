@@ -1,0 +1,14 @@
+<p-card header="Login" class="login-card">
+  <div class="input-area">
+    <label for="username">Email</label>
+    <input pInputText id="username"  [(ngModel)]="email" />
+  </div>
+  <div class="input-area">
+    <label for="password">Password</label>
+    <p-password [(ngModel)]="password" [feedback]="false"></p-password>
+  </div>
+  <p-button label="Log in" icon="pi pi-check" iconPos="right" (click)="login()"></p-button>
+  <div>
+    <p>Don’t have an account? <a href="/register">Sign up</a></p>
+  </div>
+</p-card>

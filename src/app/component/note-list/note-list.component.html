@@ -1,0 +1,10 @@
+<div class="background">
+  <p-toolbar class="toolbar">
+    <div class="p-toolbar-group-start">
+      <button pButton icon="pi pi-plus" class="add-button" (click)="createNoteMenu()"></button>
+    </div>
+  </p-toolbar>
+  @for (note of noteList; track $index) {
+    <app-note-card [Note]="note" class="card" ></app-note-card>
+  }
+</div>

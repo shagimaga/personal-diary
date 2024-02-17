@@ -1,0 +1,13 @@
+<div class="ngx-editor">
+  <ngx-editor-menu [editor]="editor" [toolbar]="toolbar"> </ngx-editor-menu>
+  <ngx-editor [editor]="editor" [(ngModel)]="htmlNote" [disabled]="false" [placeholder]="'Type here...'"></ngx-editor>
+</div>
+<div class="button-wrapper">
+  @if (!isEdit) {
+    <button pButton label="Confirm" (click)="setData(htmlNote)"></button>
+  } @else {
+    <button pButton label="Edit" (click)="editData(htmlNote)"></button>  
+  }
+</div>
+
+
